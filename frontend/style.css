@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  /*padding: 10px;*/
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+ /* border-bottom: 1px solid #004AAD;*/
+}
+
+.menu {
+  width: 80%;
+  text-align: right;
+}
+
+.menu a {
+  color: #004AAD;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu a:hover {
+  color: #004AAD;
+}
+
+.menu .btn-menu {
+  background-color: #004AAD;
+  display: inline-block;
+  transition:0.4s;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 8px;
+}
+
+.menu .btn-menu:hover {
+  background-color: #4B97FA;
+  color: white;
+}
+
+/*
+Section Main
+*/
+
+section.main {
+  background-image: url(./assets/foto.vagas.jpg);
+  padding: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  0 25%;
+}
+
+.main__cta {
+  width: 100%;
+  margin: 30px 0; 
+  padding: 30px 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.main__cta h2 {
+  color: #032e7c;
+  font-size: 35px;
+}
+
+.main__cta p {
+  color: #032e7c;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #6D9CED;
+  height: 40px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #f0f5fb;
+  font-size: 16px;
+  line-height: 40px;  
+  width: 0;
+  transition: .5s;
+}
+
+::-webkit-input-placeholder {
+  color: #f0f5fb;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background: #f0f5fb;
+  border-radius: 50%;
+}
+
+.vantagens {
+  display: flex;
+  padding: 50px;
+}
+
+.vantagens-single {
+  background-color: #3871BB;
+  width: 24%;
+  border-radius: 10px;
+  margin-right: 2%;
+  border: #3871BB 1px solid;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(to top, rgb(81, 185, 226), #3871BB);
+}
+
+.vantagens-single i {
+  color: white;
+  font-size: 23px;
+}
+
+.vantagens-single h2 {
+  color: #262729;
+  margin: 10px 0;
+  font-size: 17px;
+
+}
+
+.vantagens-sigle p {
+  color:  #6D9CED;
+  font-size: 14px;
+  line-height: 30px;  
+}
+
+section.sobre {
+  padding: 60px 15%;
+  margin: 30px;
+}
+
+.chamada-sobre {
+  width: 100%;
+  text-align: center;
+  color: #257acf;
+}
+
+.chamada-quemsomos h2 {
+  color: #257acf;
+}
+
+.chamada-sobre p {
+  font-size: 14px;
+  color: #0b0b0c;
+  margin: 10px 0;
+}
+
+section.conquistas {
+ background: #0f5abd;
+  padding:20px 0;
+}
+
+.conquista-single {
+  width: 22%;
+  margin-right: 3%;
+  text-align: center;
+  color: white;
+}
+
+.conquista-single h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.section.sobre-recolocação {
+  padding: 50px 0;
+}
+
+.sobre-recolocação-img {
+  width: 50%;
+  padding: 50px 0;
+}
+
+.sobre-recolocação-img img {
+  max-width: 80%;
+}
+
+
+.sobre-recolocação-content {
+  width: 50%;
+  padding: 80px;
+}
+
+.sobre-recolocação-content h2 {
+  color: #257acf;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+.sobre-recolocação-content p {
+  color: #0b0b0c;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+section.depoimentos {
+  padding: 40px 0;
+}
+
+section.depoimentos .depoimentos-chamada {
+  text-align: center;
+  margin-bottom: 30px;
+ }
+
+.depoimentos-chamada h2 {
+  color: #257acf;
+  font-size: 25px;
+  margin-bottom: -5px;
+}
+
+.depoimentos-chamada p {
+  color: #0b0b0c;
+  margin: 0;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.carrousel {
+  display: flex;
+}
+
+.carrousel-single {
+  width: 33%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.carrousel-single-box {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.carrousel-single-box p {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.carrousel-single-box i {
+  color: #8dbaf5;
+  
+  font-size: 19px;
+  padding: 8px;
+}
+
+.carrousel-single img {
+  max-width: 70%;
+  height: 70px;
+  display: inline-block;
+  margin: 10px 0;
+  border-radius: 50%;
+}
+
+footer {
+  font-style: italic;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #8dbaf5;
+  border-top: 4px solid rgb(27, 29, 182);
+}
+
+
+@media screen and (max-width: 768px){
+  .vantagens-sigle {
+   width:100%;
+   margin-bottom: 20px;
+  }
+} 
+
+
+
+
+
+

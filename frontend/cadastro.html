@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="cadastro.css"> 
+  <title>Formulário de cadastro</title>
+</head>
+<body>
+   
+  <div class="overlay">
+
+    <a href="index.html"class="previous">Página Inicial</a> 
+    
+      <div class="formulário">
+        <h2>Formulário para Cadastro de Currículos</h2> 
+      </div>
+
+    <div class="container">
+      <form action="https://banco-de-curriculos-api.herokuapp.com/users" method="POST">      
+        <div class="title">DADOS PESSOAIS</div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nome Completo</span>
+            <input type="text" name="fullname" placeholder="Digite seu nome completo" required> 
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Profissão</span>
+            <input type="text" name="profession" placeholder="Digite seu cargo pretendido" required> 
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Data de Nascimento</span>
+            <input type="date" name="dob" placeholder="Digite a data de nascimento" required> 
+          </div>
+          
+          <div class="input-box">        
+            <span class="details">Estado Civil</span>
+            <input type="text" name="marital_status" placeholder="Solteiro, casado, divorciado ou viúvo"> 
+          </div>     
+
+          <div class="input-box">
+            <span class="details">Cep</span>
+            <input id="postal_code" type="text" name="postal_code" placeholder="Digite apenas numeros" required> 
+          </div>
+
+          <div class="input-box">
+            <span class="details">Logradouro</span>
+            <input id="address" type="text" name="address" placeholder="Rua, n°, complemento" required> 
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Bairro</span>
+            <input id="district" type="text" name="district" placeholder="Digite o nome do bairro" required> 
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Cidade</span>
+            <input id="city" type="text" name="city" placeholder="Digite o nome da cidade" required> 
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Telefone Fixo</span>
+            <input type="text" name="phone_nr1" placeholder="(00) 0000 0000"> 
+          </div>          
+               
+          <div class="input-box">
+            <span class="details">Celular</span>
+            <input type="text" name="celphone" placeholder="(00) 00000 0000" required> 
+          </div>
+
+          <div class="input-box">
+            <span class="details">E-mail</span>
+            <input type="text" name="email" placeholder="meuemail@exemplo.com" required>
+          </div>
+
+          <div class="input-box">
+            <fieldset>
+              <legend class="details">Sexo</legend>
+              <div class="radio-options">
+                <div class="radio-option">
+                  <input type="radio" name="gender" id="sex-m" value="m">
+                  <label for="sex-m">Masculino</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" name="gender" id="sex-f" value="f">
+                  <label for="sex-f">Feminino</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" name="gender" id="sex-none" value="-">
+                  <label for="sex-none">Outro</label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+                          
+        </div>
+        <!-- user-details -->
+        
+        <section class="form-section">
+          <div class="title">DOCUMENTOS PESSOAIS</div>
+          <div class="user-details">
+            <div class="input-box"> 
+              <span class="details">Documento de Identidade</span>
+              <input type="text" name="doc_id" placeholder="Digite apenas numeros"> 
+            </div>  
+            
+            <div class="input-box">
+              <span class="details">CPF</span>
+              <input id="doc_ssn" type="text" name="doc_ssn" placeholder="Digite apenas numeros" required> 
+            </div>  
+
+          <div class="input-box">
+            <fieldset>   
+              <legend class="details">Possui veículo próprio</legend>
+              <div class="radio-options">
+                <div class="radio-option">  
+                  <input type="radio" name="res_car" id="car-yes" value="sim">
+                  <label for="car-yes">sim</label>
+                </div> 
+                <div class="radio-otption">    
+                  <input type="radio" name="res_car" id="car-no" value="não">
+                  <label for="car-no">não</label>
+                </div>
+              </div> 
+            </fieldset> 
+          </div>         
+
+          <div class="input-box">     
+            <fieldset>
+              <legend class="details">Possui habilitação</legend>
+              <div class="radio-options"> 
+                <div class="radio-option">       
+                  <input type="radio" name="drive_licence" id="lic-yes" value="sim">
+                  <label for="lic-yes">sim</label>
+                </div>
+                <div class="radio-option"> 
+                  <input type="radio" name="drive_licence" id="lic-no" value="não">
+                  <label for="lic-no">não</label>
+                </div>   
+              </div>       
+            </fieldset>
+          </div>
+
+        </section>
+        
+        <div class="button">
+          <input type="submit" class="registro" value="Confirmar Cadastro">
+        </div>
+        
+      </form>
+    </div>
+    
+  </div>
+  
+  <script src="postal_code.js"></script>
+</body>
+</html>
